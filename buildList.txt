@@ -1,0 +1,98 @@
+// version, section, address, offset, path, binary name [optional]
+
+///////////////////////////////
+// North American Version    //
+///////////////////////////////
+
+//debug font
+american, exe, 0x80026CEC, 0x0, src/debugfont/font.c
+american, exe, 0x80015a50, 0x0, src/debugfont/font2.c
+american, exe, 0x8001d074, 0x0, src/debugfont/loadFont.s
+american, exe, 0x800120f4, 0x0, src/debugfont/fontFlushHook.s
+
+american, exe, 0x80013014, 0x0, src/loadLevel.c
+american, exe, 0x800160ac, 0x0, src/backupScreens.c
+
+american, exe, 0x80012eb8, 0x0, src/playerLoad.c
+
+american, exe, 0x80092274, 0x0, src/stopSongHook.s
+
+american, exe, 0x8002ff3c, 0x0, src/exit.s
+american, exe, 0x80017568, 0x0, src/exitShow.s
+american, exe, 0x80017514, 0x0, src/exitShow2.s
+american, exe, 0x80031150, 0x0, src/exitToSelect.s
+
+american, exe, 0x8002e7e0, 0x0, src/fastSelect.s
+
+american, exe, 0x80024ea8, 0x0, src/showPoint.s
+american, exe, 0x8001fcac, 0x0, src/validPointHook.s
+american, exe, 0x800F8B5C, 0x0, src/mushroomCheckPoint.c
+
+american, exe, 0x800f241c, 0x0, src/modeTable.c
+
+american, exe, 0x80020b1c, 0x0, src/missionClear.c
+american, exe, 0x800f240c, 0x0, src/missionClearTable.c
+
+american, exe, 0x800200d4, 0x0, src/determineClear.c
+
+american, exe, 0x800f48b4, 0x0, src/stageSelect/stageSelectTable.c
+american, exe, 0x800f48c0, 0x0, src/stageSelect/stageSelectTable2.c
+american, exe, 0x8002fc44, 0x0, src/stageSelect/maverickClearedHook.s
+
+american, exe, 0x8001d8dc, 0x0, src/title.c
+american, exe, 0x800f22c8, 0x0, src/titleTable.c
+american, exe, 0x8010e764, 0x0, src/titleTextSpec.c
+american, exe, 0x8010e728, 0x0, src/titleTextSpec2.c
+american, exe, 0x800cb708, 0x0, src/titleTextObject.c
+
+//Free Space
+american, exe, 0x800ee558, 0x0, src/loadScreens.c src/state.c src/practice.c src/checkPoint.c src/titleExtra.c src/stageSelect/stageSelect.c src/stageSelect/configPage.c src/custom.c, FREE.BIN
+
+
+/////////////////////////
+// Japanese Version    //
+/////////////////////////
+
+//debug font
+japanese, exe, 0x80026d40, 0x0, src/debugfont/font.c
+japanese, exe, 0x80015a84, 0x0, src/debugfont/font2.c
+japanese, exe, 0x8001d0f4, 0x0, src/debugfont/loadFont.s
+japanese, exe, 0x80012128, 0x0, src/debugfont/fontFlushHook.s
+
+japanese, exe, 0x80013048, 0x0, src/loadLevel.c
+japanese, exe, 0x800160e0, 0x0, src/backupScreens.c
+
+japanese, exe, 0x80012eec, 0x0, src/playerLoad.c
+
+japanese, exe, 0x800922fc, 0x0, src/stopSongHook.s
+
+japanese, exe, 0x8002ff90, 0x0, src/exit.s
+japanese, exe, 0x8001759c, 0x0, src/exitShow.s
+japanese, exe, 0x80017548, 0x0, src/exitShow2.s
+japanese, exe, 0x800311a4, 0x0, src/exitToSelect.s
+
+japanese, exe, 0x8002e834, 0x0, src/fastSelect.s
+
+japanese, exe, 0x80024efc, 0x0, src/showPoint.s
+japanese, exe, 0x8001fd08, 0x0, src/validPointHook.s
+japanese, exe, 0x800f8c98, 0x0, src/mushroomCheckPoint.c
+
+japanese, exe, 0x800f2584, 0x0, src/modeTable.c
+
+japanese, exe, 0x80020b64, 0x0, src/missionClear.c
+japanese, exe, 0x800f2574, 0x0, src/missionClearTable.c
+
+japanese, exe, 0x8002011c, 0x0, src/determineClear.c
+
+japanese, exe, 0x800f49f0, 0x0, src/stageSelect/stageSelectTable.c
+japanese, exe, 0x800f49fc, 0x0, src/stageSelect/stageSelectTable2.c
+japanese, exe, 0x8002fc98, 0x0, src/stageSelect/maverickClearedHook.s
+
+japanese, exe, 0x8001d95c, 0x0, src/title.c
+japanese, exe, 0x800f242c, 0x0, src/titleTable.c
+japanese, exe, 0x8010e8a0, 0x0, src/titleTextSpec.c
+japanese, exe, 0x8010e864, 0x0, src/titleTextSpec2.c
+japanese, exe, 0x800cb758, 0x0, src/titleTextObject.c
+
+//Free Space
+japanese, exe, 0x800ee734, 0x0, src/loadScreens.c src/state.c src/practice.c src/checkPoint.c src/titleExtra.c src/stageSelect/stageSelect.c src/stageSelect/configPage.c src/custom.c, FREE.BIN
