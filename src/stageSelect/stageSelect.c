@@ -485,7 +485,7 @@ void StageSelectDetermine(Game *gameP)
                     {
                         gameP->collectables = 0x307D;
                     }
-                    else if (gameP->stageId == 1)
+                    else if (gameP->stageId == 2)
                     {
                         gameP->collectables = 0xB0FF;
                     }
@@ -512,7 +512,7 @@ void StageSelectDetermine(Game *gameP)
                     }
                     else if (gameP->stageId == 2)
                     {
-                        gameP->collectables = 0x30BE;
+                        gameP->collectables = 0xB0BE;
                     }
                     else if (gameP->stageId == 7)
                     {
