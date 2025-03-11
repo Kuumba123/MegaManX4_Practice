@@ -533,6 +533,10 @@ void StageSelectDetermine(Game *gameP)
             }
         }
     }
+    if ((gameP->collectables & 0x1000) != 0 && gameP->stageId == 0xC)
+    {
+        gameP->tanksAmmo[0] = 20;
+    }
     
     if (practice.playerFile != playerFileTable[game.player * 2 + game.cheatCodeFlag] && game.player == 0)
     {
