@@ -93,7 +93,7 @@ void CheckPointCheck(Game *gameP)
         {
             // Checkpoint Menu
             int mouse = 0;
-            int8_t max = maxCheckPoint[game.stageId * 2 + game.mid];
+            int8_t max = maxCheckPoint[gameP->stageId * 2 + gameP->mid];
 
             while (true) // Loop
             {
@@ -106,18 +106,24 @@ void CheckPointCheck(Game *gameP)
                 if ((buttonsPressed & CONFIRM) != 0)
                 {
                     checkPointNew = mouse;
-                    game.clear = 0xC1;
+                    gameP->clear = 0xC1;
                     break;
                 }
                 else if ((buttonsPressed & RESET) != 0)
                 {
-                    game.mode = 4;
-                    game.mode2 = 0;
-                    game.mode3 = 0;
-                    game.mode4 = 0;
-                    game.point = 0;
-                    game.mid = 0;
+                    gameP->mode = 4;
+                    gameP->mode2 = 0;
+                    gameP->mode3 = 0;
+                    gameP->mode4 = 0;
+                    gameP->point = 0;
+                    gameP->mid = 0;
                     BOSSFILE = 0;
+
+                    for (size_t i = 0; i < 10; i++)
+                    {
+                        gameP->refights[i] = 0;
+                    }
+
                     TurnOffSound(0xFF,0);
                     EndSong();
                     LoadRestore();
