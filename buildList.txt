@@ -24,8 +24,9 @@ american, exe, 0x80031150, 0x0, src/exitToSelect.s
 
 american, exe, 0x8002e7e0, 0x0, src/fastSelect.s
 
+american, exe, 0x800bae94, 0x0, src/warning.c
+
 american, exe, 0x80024ea8, 0x0, src/showPoint.s
-american, exe, 0x8001fcac, 0x0, src/validPointHook.s
 american, exe, 0x800F8B5C, 0x0, src/mushroomCheckPoint.c
 
 american, exe, 0x800f241c, 0x0, src/modeTable.c
@@ -73,8 +74,9 @@ japanese, exe, 0x800311a4, 0x0, src/exitToSelect.s
 
 japanese, exe, 0x8002e834, 0x0, src/fastSelect.s
 
+japanese, exe, 0x800baee4, 0x0, src/warning.c
+
 japanese, exe, 0x80024efc, 0x0, src/showPoint.s
-japanese, exe, 0x8001fd08, 0x0, src/validPointHook.s
 japanese, exe, 0x800f8c98, 0x0, src/mushroomCheckPoint.c
 
 japanese, exe, 0x800f2584, 0x0, src/modeTable.c

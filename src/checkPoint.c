@@ -42,10 +42,11 @@ int8_t maxCheckPoint[] =
         0, 0,  // ST09
         2, 0,  // ST0A
         1, 2,  // ST0B
-        10, 0  // ST0C
+        18, 0  // ST0C
 };
 
-void SetupSpawn();
+static DR_TPAGE livesTpage[2];
+static SPRT_16 livesSprt[2][2];
 
 void DrawDebugText(uint16_t x, uint16_t y, uint8_t clut, char *textP, ...);
 
@@ -162,13 +163,48 @@ void CheckPointCheck(Game *gameP)
         }
     }
 }
-void ValidCheckPoint()
+void ShowPoint(int lives)
 {
-    SetupSpawn();
-    if (game.point > 9)
+    /*Orignal Position is X: 31 , Y: 80*/
+    for (size_t i = 0; i < 2; i++)
     {
-        game.point = 9;
+        if (lives < 10 && i != 0)
+        {
+            setlen(&livesSprt[buffer][i],0);
+        }
+        else
+        {
+            setlen(&livesSprt[buffer][i],3);
+        }
+        
+        setcode(&livesSprt[buffer][i],0x7D);
+
+        livesSprt[buffer][i].y0 = 80;
+        
+        if (i == 0)
+        {
+            setUV0(&livesSprt[buffer][i],(lives % 10) * 16, 240);
+            if (lives > 9)
+            {
+                livesSprt[buffer][i].x0 = 31 + 1;
+            }
+            else
+            {
+                livesSprt[buffer][i].x0 = 31;
+            }
+        }
+        else
+        {
+            livesSprt[buffer][i].x0 = 29;
+            setUV0(&livesSprt[buffer][i],1 * 16, 240);
+        }
+        setClut(&livesSprt[buffer][i],16,481);
     }
+    setlen(&livesTpage[buffer],1);
+    catPrim(&livesTpage[buffer],&livesSprt[buffer][0]);
+    catPrim(&livesSprt[buffer][0],&livesSprt[buffer][1]);
+    livesTpage[buffer].code[0] = 0xE1000005;
+    addPrims(&drawP->ot[3],&livesTpage[buffer],&livesSprt[buffer][1]);
 }
 #undef MENU_TXT
 #undef RESET
