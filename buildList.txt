@@ -65,7 +65,7 @@ japanese, exe, 0x800160e0, 0x0, src/backupScreens.c
 
 japanese, exe, 0x80012eec, 0x0, src/playerLoad.c
 
-japanese, exe, 0x800922fc, 0x0, src/stopSongHook.s
+japanese, exe, 0x800922c0, 0x0, src/stopSongHook.s
 
 japanese, exe, 0x8002ff90, 0x0, src/exit.s
 japanese, exe, 0x8001759c, 0x0, src/exitShow.s
@@ -96,5 +96,8 @@ japanese, exe, 0x8010e8a0, 0x0, src/titleTextSpec.c
 japanese, exe, 0x8010e864, 0x0, src/titleTextSpec2.c
 japanese, exe, 0x800cb758, 0x0, src/titleTextObject.c
 
+//version spefic file
+japanese, exe, 0x800922c8, 0x0, src/songHook.s
+
 //Free Space
-japanese, exe, 0x800ee734, 0x0, src/loadScreens.c src/state.c src/practice.c src/checkPoint.c src/titleExtra.c src/stageSelect/stageSelect.c src/stageSelect/configPage.c src/custom.c, FREE.BIN
+japanese, exe, 0x800ee734, 0x0, src/loadScreens.c src/state.c src/practice.c src/checkPoint.c src/titleExtra.c src/stageSelect/stageSelect.c src/stageSelect/configPage.c src/custom.c src/song.c, FREE.BIN

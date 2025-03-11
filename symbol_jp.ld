@@ -1,5 +1,6 @@
 clutPointer = 0x1f800028;
 
+DetermineBossSong = 0x80016570;
 DeleteEffectObject = 0x8002b5b4;
 
 LoadScreenInfoFade = 0x80015c44;
@@ -23,6 +24,8 @@ SwapWeaponTexturesClut = 0x80037238;
 StageSelectLoop = 0x8002e9e8;
 
 SetupSpawn = 0x80028c44;
+
+songState = 0x80173d3c;
 
 title = 0x80173d28;
 
