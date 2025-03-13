@@ -91,6 +91,8 @@ void CheckPointCheck(Game *gameP)
         }
         else if ((buttonsHeld & (PAD_L1 + PAD_R1 + PAD_TRIANGLE + PAD_SELECT)) == (PAD_L1 + PAD_R1 + PAD_TRIANGLE + PAD_SELECT))
         {
+            ThreadSleep(1);
+
             // Checkpoint Menu
             int mouse = 0;
             int8_t max = maxCheckPoint[gameP->stageId * 2 + gameP->mid];
