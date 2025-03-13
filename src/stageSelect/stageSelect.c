@@ -438,7 +438,7 @@ void StageSelectDetermine(Game *gameP)
                 gameP->clearedStages = uaXClearedTable[gameP->stageId - 1];
                 gameP->collectables = uaXCollectablesTable[gameP->stageId - 1];
 
-                if (gameP->stageId != 6)
+                if (gameP->stageId != 6 || gameP->mid != 0)
                 {
                     gameP->armorParts = 0xF;
                     gameP->busterType = 2;
