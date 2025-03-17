@@ -358,25 +358,3 @@ void StateCheck(Game *gameP)
     }
     mode_A_Table[gameP->mode2](gameP);
 }
-
-#undef EARTH_SIGMA_ID
-#undef ST0C_1_ARC_ID
-#undef UPDATECLUT
-#undef SCREENBACKUP
-#undef RNG
-#undef BOSSFILE
-#undef STARTSELECT_FLAG
-#undef VABP
-
-#undef FADE_F
-
-#undef TEXTCLUT_BACKUP_ADDR
-#undef RIDE_ARMOR_ADDR
-#undef TEXT_INFO_ADDR
-#undef TEXT_EXTRA_ADDR
-#undef BRIGHT_ADDR
-#undef M_BRIGHT_ADDR
-#undef EM_BRIGHT_ADDR
-#undef TBL_BRIGHT_ADDR
-#undef AFTER_IMG_ADDR
-#undef BOSS_VARS_ADDR
