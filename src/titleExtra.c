@@ -23,7 +23,7 @@ void TitlePressStartHook(struct Title *titleP)
     titleP->timer -= 1;
     if (titleP->timer == 1)
     {
-        titleP->mode2 = 4;
+        titleP->mode2 = 0xE;
         FadeOut(8);
     }
     ShowPracticeTitleText();
