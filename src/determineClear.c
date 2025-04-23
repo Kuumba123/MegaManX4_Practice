@@ -74,10 +74,6 @@ void DetermineClear(Game *gameP)
 
             if ((uint8_t)gameP->clear == 0xC1)
             {
-                if (gameP->stageId == 0xC && gameP->mid != 0)
-                {
-                    BOSSFILE = 1;
-                }
                 freeArcP = endFreeArcP;
                 gameP->point = checkPointNew;
                 gameP->weaponTemp = 0;
