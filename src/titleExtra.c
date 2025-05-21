@@ -15,7 +15,7 @@ void DrawDebugText(uint16_t x, uint16_t y, uint8_t clut, char *textP, ...);
 void ShowPracticeTitleText()
 {
     game.startMode = 0xA;
-    DrawDebugText(11, 15, 0, "Practice\tBETA");
+    DrawDebugText(11, 15, 0, "Practice\tHack 1.0");
     DrawDebugText(21, 25, 2, "@PogChampGuy");
 }
 void TitlePressStartHook(struct Title *titleP)
